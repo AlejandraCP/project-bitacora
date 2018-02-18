@@ -2,6 +2,7 @@ $(document).ready(function () {
 
   // funcionalidad Materialize
   $('.modal').modal();
+  Materialize.updateTextFields();
 
 
   // variables elementos dom
@@ -28,6 +29,7 @@ $(document).ready(function () {
     preview.html('');
     localStorage.url = '';
     titleImage.val('');
+    $('.file-path').val('');
   }
 
   // Cargar la imagen desde el usuario

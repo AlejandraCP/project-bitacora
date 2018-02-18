@@ -1,6 +1,6 @@
 .preview-image {
   margin: 1em;
-  width: 100px;
+  width: 90px;
   height: auto;
 }
 
@@ -8,7 +8,7 @@
   font-size: 1.5em;
 }
 
-body {
+.bg-body {
   background: url('../assets/images/bgimg.jpeg');
   text-align: center;
   background-position: center;
