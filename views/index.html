@@ -13,7 +13,8 @@
 </head>
 
 <body>
-  <h2>Bitácora</h2>
+  <h2 class="center-align">Flash Bitácora</h2>
+  <p class="center-align">"Publish anything", just in your browser</p>
   <div class="container">
 
   </div>
@@ -42,7 +43,7 @@
         </a>
       </li>
       <li>
-        <a class="btn-floating blue">
+        <a class="btn-floating blue modal-trigger" href="#modal2">
           <i class="material-icons">video_library</i>
         </a>
       </li>
@@ -68,17 +69,42 @@
           <input class="file-path" type="text">
         </div>
       </div>
-
-
       <div class="preview-image">
-
       </div>
-
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn " id="btn-send">Send</a>
     </div>
   </div>
+
+
+  <!-- Modal video-->
+  <div id="modal2" class="modal">
+      <div class="modal-content">
+  
+        <div class="input-field col s6">
+          <input id="title-audio-movie" type="text" class="title-audio-movie">
+          <label for="title-audio-movie">Title Movie/ Audio</label>
+        </div>
+  
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>Audio / Video</span>
+            <input type="file" id="file-movie">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path" type="text">
+          </div>
+        </div>
+        <div class="preview-image">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn " id="btn-video-audio">Send</a>
+      </div>
+    </div>
+
+  
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
