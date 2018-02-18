@@ -1,0 +1,36 @@
+body {
+  background: url('../assets/images/bgimg.jpeg');
+  text-align: center;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.2rem; 
+  
+}
+
+h1 {
+  margin: 0;
+  padding: 5rem 3rem;
+}
+
+h3 {
+  padding: 2rem;
+}
+
+.btn-style {
+  font-size: 1.5em;
+  margin: 1.5em;
+  color: black;
+}
+.btn-style:hover {
+  color: rgb(51, 46, 46);
+}
+
+.contain {
+  height: 100vh;
+  background: #00000075;
+
+}
