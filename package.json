@@ -1,0 +1,19 @@
+{
+  "name": "project-bitacora",
+  "version": "1.0.0",
+  "description": "A bitácora using file API, Geolocation API, Audio, video and Date input.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandraCP/project-bitacora.git"
+  },
+  "author": "Alejandra Cabrera and Carla Centeno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlejandraCP/project-bitacora/issues"
+  },
+  "homepage": "https://github.com/AlejandraCP/project-bitacora#readme"
+}
