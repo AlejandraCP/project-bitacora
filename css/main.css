@@ -8,9 +8,12 @@
   font-size: 1.5em;
 }
 
-.bg-body {
-  background: url('../assets/images/bgimg.jpeg');
+body{
   text-align: center;
+}
+
+.body-main {
+  background: url('../assets/images/bgimg.jpeg');
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -18,7 +21,6 @@
   text-transform: uppercase;
   font-family: 'Anton', sans-serif;
   letter-spacing: 0.2rem; 
-  
 }
 
 h1 {
@@ -42,5 +44,13 @@ h3 {
 .contain {
   height: 100vh;
   background: #00000075;
+}
+
+.modal {
+  color: black;
+}
+
+#map {
+  height: 300px;
 
 }

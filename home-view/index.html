@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link rel="stylesheet" href="../css/main.css">
-  <title>Bitácora</title>
-</head>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<body>
-  <h2 class="center-align">Flash Bitácora</h2>
-  <p class="center-align">"Publish anything", just in your browser</p>
-  <div class="container">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Crea tu bitácora</title>
+</head>
+<body class="align-center">
+  <h2>Flash Bitácora</h2>
+  <p>Publica lo que te apasiona</p>
+  <div class="post-container container">
 
   </div>
-
-
-
-  <!--Menú -->
-  <div class="fixed-action-btn horizontal click-to-toggle">
+  <div class="fixed-action-btn horizontal">
     <a class="btn-floating btn-large red">
-      <i class="material-icons">menu</i>
+      <i class="large material-icons">mode_edit</i>
     </a>
     <ul>
       <li>
-        <a class="btn-floating red">
-          <i class="material-icons">chat</i>
+        <a class="btn-floating btn-message red modal-trigger" href="#modal1">
+          <i class="material-icons">message</i>
         </a>
       </li>
       <li>
-        <a class="btn-floating yellow darken-1 modal-trigger" href="#modal1">
-          <i class="material-icons">perm_media</i>
+        <a class="btn-floating yellow darken-1  modal-trigger" href="#modal3">
+          <i class="material-icons">photo_library</i>
         </a>
       </li>
       <li>
-        <a class="btn-floating green">
-          <i class="material-icons">event</i>
+        <a class="btn-floating green btn-date modal-trigger" href="#modal2">
+          <i class="material-icons">date_range</i>
         </a>
       </li>
       <li>
-        <a class="btn-floating blue modal-trigger" href="#modal2">
+        <a class="btn-floating blue  modal-trigger" href="#modal4">
           <i class="material-icons">video_library</i>
         </a>
       </li>
     </ul>
   </div>
+<!-- modal message -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="input-field col s6">
+        <input id="title" type="text" class="validate">
+        <label for="title">Título</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="message" type="text" class="validate">
+        <label for="message">Mensaje</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect btn-post waves-green teal btn-flat ">Publicar</button>
+    </div>
+  </div>
+
+  <!-- modal date -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <div class="input-field col s6">
+        <input id="title-date" type="text" class="validate">
+        <label for="title-date">Título</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="date" type="text" class="validate datepicker" name="fecha" value="2018-02-19" step>
+
+      </div>
+      <div id="map">
+
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect btn-post-date waves-green teal btn-flat" id="btn-date">Publicar</button>
+    </div>
+  </div>
 
 
   <!-- Modal imagen-->
-  <div id="modal1" class="modal">
+  <div id="modal3" class="modal">
     <div class="modal-content">
 
       <div class="input-field col s6">
@@ -79,7 +110,7 @@
 
 
   <!-- Modal video-->
-  <div id="modal2" class="modal">
+  <div id="modal4" class="modal">
       <div class="modal-content">
   
         <div class="input-field col s6">
@@ -106,9 +137,15 @@
 
   
 
+
+
+
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXlryWroUad-4uy8LobtFTMuiVOOj7lW4&callback=initMap"
+    async defer></script>
   <script src="../js/app.js"></script>
 </body>
-
 </html>
