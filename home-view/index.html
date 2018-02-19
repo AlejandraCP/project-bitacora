@@ -69,12 +69,15 @@
         <label for="title-date">Título</label>
       </div>
       <div class="input-field col s6">
-        <input id="date" type="date" class="validate" name="fecha" value="2018-02-19" step>
-        <label for="date">¿En qué fecha se realizó el evento? </label>
+        <input id="date" type="text" class="validate datepicker" name="fecha" value="2018-02-19" step>
+
+      </div>
+      <div id="map">
+
       </div>
     </div>
     <div class="modal-footer">
-      <button class="modal-action modal-close waves-effect btn-post-date waves-green teal btn-flat ">Publicar</button>
+      <button class="modal-action modal-close waves-effect btn-post-date waves-green teal btn-flat" id="btn-date">Publicar</button>
     </div>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
