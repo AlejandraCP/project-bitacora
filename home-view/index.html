@@ -7,43 +7,140 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <title>Crea tu bitácora</title>
 </head>
+<body class="align-center">
+  <h2>Flash Bitácora</h2>
+  <p>Publica lo que te apasiona</p>
+  <div class="post-container container">
 
-<body>
+  </div>
   <div class="fixed-action-btn horizontal">
     <a class="btn-floating btn-large red">
       <i class="large material-icons">mode_edit</i>
     </a>
     <ul>
       <li>
-        <a class="btn-floating red">
+        <a class="btn-floating btn-message red modal-trigger" href="#modal1">
           <i class="material-icons">message</i>
         </a>
       </li>
       <li>
-        <a class="btn-floating yellow darken-1">
+        <a class="btn-floating yellow darken-1  modal-trigger" href="#modal3">
           <i class="material-icons">photo_library</i>
         </a>
       </li>
       <li>
-        <a class="btn-floating green">
+        <a class="btn-floating green btn-date modal-trigger" href="#modal2">
           <i class="material-icons">date_range</i>
         </a>
       </li>
       <li>
-        <a class="btn-floating blue">
+        <a class="btn-floating blue  modal-trigger" href="#modal4">
           <i class="material-icons">video_library</i>
         </a>
       </li>
     </ul>
   </div>
+<!-- modal message -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="input-field col s6">
+        <input id="title" type="text" class="validate">
+        <label for="title">Título</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="message" type="text" class="validate">
+        <label for="message">Mensaje</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect btn-post waves-green teal btn-flat ">Publicar</button>
+    </div>
+  </div>
+
+  <!-- modal date -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <div class="input-field col s6">
+        <input id="title-date" type="text" class="validate">
+        <label for="title-date">Título</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="date" type="text" class="validate datepicker" name="fecha" value="2018-02-19" step>
+
+      </div>
+      <div id="map">
+
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect btn-post-date waves-green teal btn-flat" id="btn-date">Publicar</button>
+    </div>
+  </div>
+
+
+  <!-- Modal imagen-->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+
+      <div class="input-field col s6">
+        <input id="title-image" type="text" class="title-image">
+        <label for="title-image">Title Image</label>
+      </div>
+
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>File</span>
+          <input type="file" id="files">
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path" type="text">
+        </div>
+      </div>
+      <div class="preview-image">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn " id="btn-send">Send</a>
+    </div>
+  </div>
+
+
+  <!-- Modal video-->
+  <div id="modal4" class="modal">
+      <div class="modal-content">
+  
+        <div class="input-field col s6">
+          <input id="title-audio-movie" type="text" class="title-audio-movie">
+          <label for="title-audio-movie">Title Movie/ Audio</label>
+        </div>
+  
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>Audio / Video</span>
+            <input type="file" id="file-movie">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path" type="text">
+          </div>
+        </div>
+        <div class="preview-image">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn " id="btn-video-audio">Send</a>
+      </div>
+    </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="js/app.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXlryWroUad-4uy8LobtFTMuiVOOj7lW4&callback=initMap"
+    async defer></script>
+  <script src="../js/app.js"></script>
 </body>
 
 </html>
