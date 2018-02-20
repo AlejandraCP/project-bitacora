@@ -71,7 +71,7 @@ sendImage.on('click', function() {
   let textTitle = titleImage.val();
   let template;
   if (urlImage) {
-    template = ` <div class="row center-align z-depth-3">
+    template = ` <div class="container center-align z-depth-3">
       <div class="col s12 m12">
         <div class="card">
           <div class="card-image">
@@ -95,7 +95,7 @@ btnAudioVideo.on('click', function() {
   let template;
   if (urlAudioVideo) {
     if (typeFile === 'video') {
-      template = ` <div class="row center-align z-depth-3">
+      template = ` <div class="container center-align z-depth-3">
         <div class="col s12 m12">
           <div class="card">
             <div class="card-image">
@@ -109,7 +109,7 @@ btnAudioVideo.on('click', function() {
       </div>`;
     }
     if (typeFile === 'audio') {
-      template = ` <div class="row center-align z-depth-3">
+      template = ` <div class="container center-align z-depth-3">
         <div class="col s12 m12">
           <div class="card">
           <div class="card-content">
