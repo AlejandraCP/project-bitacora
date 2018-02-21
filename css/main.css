@@ -23,6 +23,19 @@ body{
   letter-spacing: 0.2rem; 
 }
 
+.body-view2 {
+  background: url('../assets/images/img-view2.jpg');
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.2rem; 
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   margin: 0;
   padding: 5rem 3rem;
@@ -46,6 +59,11 @@ h3 {
   background: #00000075;
 }
 
+.contain-view2 {
+  height: 90vh;
+  background: #00000075;
+}
+
 .modal {
   color: black;
 }
@@ -53,4 +71,9 @@ h3 {
 #map {
   height: 200px;
 
+}
+
+.post-container {
+  background-color: #fff;
+  color: black
 }
